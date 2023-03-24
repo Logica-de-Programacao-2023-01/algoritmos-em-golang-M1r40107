@@ -1,0 +1,182 @@
+Seq 1
+
+package main
+
+import "fmt"
+
+func main() {
+	var x1, x2, x3 int
+	fmt.Print("Escreva um numero inteiro:")
+	fmt.Scan(&x1)
+	fmt.Print("Escreva outro numero inteiro:")
+	fmt.Scan(&x2)
+	fmt.Print("Escreva mais um numero inteiro:")
+	fmt.Scan(&x3)
+
+	soma := x1 + x2 + x3
+	fmt.Println("Então o resultado é:", soma)
+}
+
+Seq 2
+
+package main
+
+import "fmt"
+
+func main() {
+	var x1 int
+	fmt.Print("Escreva um numero inteiro:")
+	fmt.Scan(&x1)
+
+	dobro := x1 * 2
+	triplo := x1 * 3
+	quadruplo := x1 * 4
+
+	fmt.Println("O resultado é", dobro)
+	fmt.Println("O resultado é", triplo)
+	fmt.Println("O resultado é", quadruplo)
+}
+
+Seq 3
+
+package main
+
+import "fmt"
+
+func main() {
+	var weight float64
+	fmt.Print("Qual o seu peso?")
+	fmt.Scan(&weight)
+	var height float64
+	fmt.Print("Qual a sua altura?")
+	fmt.Scan(&height)
+
+	IMC := weight / height
+	fmt.Println("Seu IMC é", IMC)
+
+}
+
+Seq 4
+
+package main
+
+import "fmt"
+
+func main() {
+	var x1, x2, x3 float64
+	fmt.Print("Escreva um numero:")
+	fmt.Scan(&x1)
+	fmt.Print("Escreva outro numero:")
+	fmt.Scan(&x2)
+	fmt.Print("Escreva mais um numero:")
+	fmt.Scan(&x3)
+	var p1, p2, p3 float64
+	fmt.Print("Escreva um peso:")
+	fmt.Scan(&p1)
+	fmt.Print("Escreva outro peso:")
+	fmt.Scan(&p2)
+	fmt.Print("Escreva mais um peso:")
+	fmt.Scan(&p3)
+
+	Mp := x1*p1 + x2*p2 + x3*p3/p1 + p2 + p3
+	fmt.Println("A média ponderada é", Mp)
+
+}
+
+Seq 5
+
+package main
+
+import "fmt"
+
+func main() {
+	var age int
+	fmt.Print("Idade:")
+	fmt.Scan(&age)
+
+	days := age * 365
+	fmt.Println("Sua idade em dias é", days)
+
+}
+
+Seq 6 
+
+package main
+
+import "fmt"
+
+func main() {
+	var salário float64
+	fmt.Print("Quanto vc ganha?")
+	fmt.Scan(&salário)
+
+	aumento := salário + salário*0.15
+	fmt.Println("Seu salário foi para", aumento)
+
+}
+
+Seq 7
+
+package main
+
+import "fmt"
+
+func main() {
+	var x int
+	fmt.Print("Número:")
+	fmt.Scan(&x)
+
+	antecessor := x - 1
+	sucessor := x + 1
+	fmt.Println("O antecessor é", antecessor)
+	fmt.Println("O sucessor é", sucessor)
+}
+
+Seq 8
+
+package main
+
+import "fmt"
+
+func main() {
+	var dias, diaria int
+	fmt.Print("Informe os dias trabalhados:")
+	fmt.Scan(&dias)
+	fmt.Print("Informe o preço da diária:")
+	fmt.Scan(&diaria)
+
+	salario := dias * diaria
+	fmt.Println("O valor a receber será", salario)
+
+}
+
+Seq 9
+
+package main
+
+import "fmt"
+
+func main() {
+	var cost float64
+	fmt.Print("Quanto custa o produto?")
+	fmt.Scan(&cost)
+
+	desconto := cost - cost*0.1
+	fmt.Println("O novo preço é", desconto)
+	
+}
+
+Seq 10
+
+package main
+
+import "fmt"
+
+func main() {
+	var kg float64
+	fmt.Print("Qual o seu peso em kg?")
+	fmt.Scan(&kg)
+
+	lb := kg * 2.2046
+	fmt.Println("Seu peso em libras é", lb)
+}
